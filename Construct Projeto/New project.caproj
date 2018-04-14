@@ -7,16 +7,13 @@
     <author-email></author-email>
     <author-website>http://</author-website>
     <app-id>com.mycompany.myapp</app-id>
-    <unique-id>3jf0uakwldfh3</unique-id>
+    <unique-id>4w0d7xi7ioyt</unique-id>
     <saved-with-version>25500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
-        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
-    <used-behaviors>
-        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
-        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
-    </used-behaviors>
+    <used-behaviors />
     <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
@@ -44,222 +41,94 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="Personagem" sid="458988325729678">
+        <object-type name="Keyboard" sid="846080325305379">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Background" sid="684908081692878">
             <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable name="life" sid="119617540492515" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="847362557950950">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298520355416247" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.507937" original-source="C:\Users\User\Desktop\stick_wood_outline_broken.png">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="263071469249440" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0" original-source="C:\Users\user\Desktop\asd\844946240_preview_d09d43f7af5ce184e5a79c3a8f706b2a3bb64e2f.png">
+                        <image-point name="Imagepoint 1" x="0" y="0" />
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Titulo" sid="632279571794607">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="288932142914280" speed="5">
+                    <frame duration="1" hotspotX="0.215893" hotspotY="0.368217" original-source="C:\Users\user\Desktop\asd\Peanuts_title.png">
                         <collision-poly>
-                            <point x="0.166667" y="0.047619" />
-                            <point x="0.5" y="0.0952381" />
-                            <point x="0.555556" y="0.126984" />
-                            <point x="1" y="0.492063" />
-                            <point x="0.944444" y="0.984127" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0555556" y="0.984127" />
-                            <point x="0" y="0.492063" />
+                            <point x="0.0175809" y="0.0968992" />
+                            <point x="0.5" y="0.0348837" />
+                            <point x="0.990858" y="0.0503876" />
+                            <point x="0.976793" y="0.872093" />
+                            <point x="0.5" y="0.569767" />
+                            <point x="0.00984529" y="0.945736" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Platform" sid="772541406484903">
+        <object-type name="Menu" sid="740145636061517">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Solid" sid="479482383142863">
-                    <behavior id="solid" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379901729520966" speed="5">
-                    <frame duration="1" hotspotX="0.501597" hotspotY="0.52381" original-source="C:\Users\User\Desktop\lifebar_bar.png">
+                <animation framecount="1" loop="0" name="M1" pingpong="0" repeatcount="1" repeatto="0" sid="656940736984672" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Desktop\asd\Menu inicial\Menu inicial\menu1.png">
                         <collision-poly>
-                            <point x="0.00638978" y="0.0952381" />
-                            <point x="0.498403" y="0.0952381" />
-                            <point x="0.990415" y="0.142857" />
-                            <point x="0.990415" y="0.857143" />
-                            <point x="0.498403" y="0.904762" />
-                            <point x="0.00638978" y="0.904762" />
+                            <point x="0.0594059" y="0.0952381" />
+                            <point x="0.950495" y="0.0793651" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.712871" y="0.539683" />
+                            <point x="0.5" y="0.904762" />
+                            <point x="0.277228" y="0.555556" />
+                            <point x="0.257426" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="M2" pingpong="0" repeatcount="1" repeatto="0" sid="217031067449044" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Desktop\asd\Menu inicial\Menu inicial\menu2.png">
+                        <collision-poly>
+                            <point x="0.257426" y="0.412698" />
+                            <point x="0.5" y="0.0793651" />
+                            <point x="0.950495" y="0.0793651" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.712871" y="0.539683" />
+                            <point x="0.5" y="0.904762" />
+                            <point x="0.277228" y="0.555556" />
+                            <point x="0.00990099" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="M3" pingpong="0" repeatcount="1" repeatto="0" sid="625155561920818" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\user\Desktop\asd\Menu inicial\Menu inicial\menu3.png">
+                        <collision-poly>
+                            <point x="0.257426" y="0.412698" />
+                            <point x="0.5" y="0.0793651" />
+                            <point x="0.950495" y="0.0793651" />
+                            <point x="0.990099" y="0.5" />
+                            <point x="0.712871" y="0.539683" />
+                            <point x="0.5" y="0.904762" />
+                            <point x="0.029703" y="0.952381" />
+                            <point x="0.257426" y="0.5" />
                         </collision-poly>
                     </frame>
                 </animation>
             </animation-folder>
-        </object-type>
-        <object-type name="Camera" sid="570854513710084">
-            <plugin id="Sprite" />
-            <instance-variables>
-                <instance-variable comment="3" name="life" sid="404626453258119" type="number" />
-            </instance-variables>
-            <behaviors>
-                <behavior-type name="Platform" sid="643881970375504">
-                    <behavior id="Platform" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="984937414628493" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Coragem" sid="130787342173604">
-            <plugin id="Text" />
-        </object-type>
-        <object-type name="1Life" sid="107515395374412">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="6" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="549239728654995" speed="5">
-                    <frame duration="1" hotspotX="0.450704" hotspotY="0.464789" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame1.png">
-                        <collision-poly>
-                            <point x="0.211268" y="0.126761" />
-                            <point x="0.450704" y="0.028169" />
-                            <point x="0.732394" y="0.084507" />
-                            <point x="0.985915" y="0.464789" />
-                            <point x="0.774648" y="0.887324" />
-                            <point x="0.450704" y="0.971831" />
-                            <point x="0.169014" y="0.84507" />
-                            <point x="0.0140845" y="0.464789" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.590164" hotspotY="0.507042" />
-                    <frame duration="1" hotspotX="0.673913" hotspotY="0.507042" />
-                    <frame duration="1" hotspotX="1.35294" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.506849" />
-                    <frame duration="1" hotspotX="0.516129" hotspotY="0.527778" />
-                </animation>
-                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="422864746706939" speed="5">
-                    <frame duration="1" hotspotX="2.31148" hotspotY="1.22535" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame2.png">
-                        <collision-poly>
-                            <point x="1" y="0.0140845" />
-                            <point x="1" y="0.0140845" />
-                            <point x="1" y="0.028169" />
-                            <point x="0.360656" y="0.971831" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Animation3" pingpong="0" repeatcount="1" repeatto="0" sid="739614492236289" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.633803" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame3.png">
-                        <collision-poly>
-                            <point x="0.173913" y="0.0985916" />
-                            <point x="0.5" y="0.0140845" />
-                            <point x="0.804348" y="0.112676" />
-                            <point x="0.956522" y="0.633803" />
-                            <point x="0.521739" y="0.971831" />
-                            <point x="0.478261" y="0.971831" />
-                            <point x="0.0434783" y="0.633803" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Animation4" pingpong="0" repeatcount="1" repeatto="0" sid="200162781588402" speed="5">
-                    <frame duration="1" hotspotX="0.411765" hotspotY="0.666667" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame4.png">
-                        <collision-poly>
-                            <point x="0.0588235" y="0.152778" />
-                            <point x="0.411765" y="0.0138889" />
-                            <point x="0.882353" y="0.125" />
-                            <point x="0.882353" y="0.666667" />
-                            <point x="0.411765" y="0.958333" />
-                            <point x="0.0588235" y="0.666667" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Animation5" pingpong="0" repeatcount="1" repeatto="0" sid="489448343570681" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.547945" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame5.png">
-                        <collision-poly>
-                            <point x="0.217391" y="0.0958904" />
-                            <point x="0.5" y="0.0136986" />
-                            <point x="0.804348" y="0.0821918" />
-                            <point x="0.978261" y="0.534247" />
-                            <point x="0.695652" y="0.931507" />
-                            <point x="0.5" y="0.945205" />
-                            <point x="0.304348" y="0.931507" />
-                            <point x="0.0434783" y="0.534247" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Animation6" pingpong="0" repeatcount="1" repeatto="0" sid="477045036491058" speed="5">
-                    <frame duration="1" hotspotX="0.492063" hotspotY="0.447368" original-source="C:\Users\User\Desktop\COnstruct ideias\Moeda\frame6.png">
-                        <collision-poly>
-                            <point x="0.111111" y="0.184211" />
-                            <point x="0.47619" y="0.0131579" />
-                            <point x="0.873016" y="0.171053" />
-                            <point x="0.952381" y="0.447368" />
-                            <point x="0.888889" y="0.736842" />
-                            <point x="0.47619" y="0.907895" />
-                            <point x="0.0952381" y="0.723684" />
-                            <point x="0.031746" y="0.447368" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Drugs" sid="327142865091401">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="654862521545344" speed="5">
-                    <frame duration="1" hotspotX="0.497585" hotspotY="0.497585" original-source="C:\Users\User\Desktop\COnstruct ideias\droga\droga.png">
-                        <collision-poly>
-                            <point x="0.193237" y="0.144928" />
-                            <point x="0.497585" y="0.0531401" />
-                            <point x="0.729469" y="0.217391" />
-                            <point x="0.94686" y="0.497585" />
-                            <point x="0.768116" y="0.816425" />
-                            <point x="0.140097" y="0.903382" />
-                            <point x="0.0434783" y="0.497585" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Lives" sid="293003421665417">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="323691545317990" speed="5">
-                    <frame duration="1" hotspotX="0.509479" hotspotY="0.37037" original-source="C:\Users\User\Desktop\COnstruct ideias\vidas\hearts.png">
-                        <collision-poly>
-                            <point x="0.0402844" y="0.0555556" />
-                            <point x="0.509479" y="0.0925926" />
-                            <point x="0.969194" y="0.0925926" />
-                            <point x="0.99763" y="0.37037" />
-                            <point x="0.969194" y="0.648148" />
-                            <point x="0.509479" y="0.935185" />
-                            <point x="0.042654" y="0.675926" />
-                            <point x="0.00473934" y="0.37037" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="238584112579554" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.15741" />
-                </animation>
-                <animation framecount="1" loop="0" name="Animation3" pingpong="0" repeatcount="1" repeatto="0" sid="967006928623354" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.15741" />
-                </animation>
-                <animation framecount="1" loop="0" name="Animation4" pingpong="0" repeatcount="1" repeatto="0" sid="404462424702244" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.15741" />
-                </animation>
-                <animation framecount="1" loop="0" name="Animation6" pingpong="0" repeatcount="1" repeatto="0" sid="596937212081259" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="1.15741" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Temporizador" sid="111739949977766">
-            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
-        <layout>main screen .xml</layout>
+        <layout>Menu.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Código principal.xml</event-sheet>
+        <event-sheet>Menu sheet.xml</event-sheet>
+        <event-sheet>Menu.xml</event-sheet>
     </event-folder>
-    <global-instances />
+    <global-instances>
+        <global-instance type="Keyboard" uid="0" />
+    </global-instances>
     <sounds-folder />
     <music-folder />
     <files-folder>

@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu</name>
+    <events>
+        <event-block sid="324310535926041">
+            <conditions>
+                <condition id="2" name="Key is down" sid="219429653650324" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition disabled="1" id="2" name="Is playing" sid="337160716474183" type="Menu">
+                    <param id="0" name="Animation">&quot;M1&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="948764146409408" type="Menu">
+                    <param id="0" name="Animation">&quot;M2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="349169090092254">
+            <conditions>
+                <condition id="2" name="Key is down" sid="782525878513680" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="777160776143640" type="Menu">
+                    <param id="0" name="Animation">&quot;M2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="992614613773462" type="Menu">
+                    <param id="0" name="Animation">&quot;M3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block disabled="1" sid="913059871760535">
+            <conditions>
+                <condition id="2" name="Key is down" sid="498859831420815" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="903928599059529" type="Menu">
+                    <param id="0" name="Animation">&quot;M3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="663314549927999" type="Menu">
+                    <param id="0" name="Animation">&quot;M1&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
