@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Código principal</name>
+    <events>
+        <variable constant="0" name="score" sid="904060148390654" static="0" type="number">0</variable>
+        <variable constant="0" name="timer" sid="350224787448124" static="0" type="number">10</variable>
+        <event-block sid="818033079877380">
+            <conditions>
+                <condition id="-4" name="Is outside layout" sid="443212217622604" type="Personagem" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="418258509772510" type="Personagem">
+                    <param id="0" name="X">96</param>
+                    <param id="1" name="Y">288</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="683863484487642">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="292870865449801" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="954881982620840" type="Camera">
+                    <param id="0" name="X">lerp(Self.X, personagem.X, 0.03)</param>
+                    <param id="1" name="Y">lerp(Self.Y, personagem.Y, 0.03)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="230926801607589">
+            <conditions>
+                <condition id="3" name="Compare frame" sid="689481856597293" type="1Life">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Number">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="3" name="Start" sid="536135136823035" type="1Life">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="965767806206100">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="413557567075739" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="277067392155861">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="254077667107918" type="Personagem">
+                    <param id="0" name="Object">Drugs</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="963950654894594" type="Lives">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="623678556207418" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="391785922969080" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="294732999190002" type="Drugs" />
+            </actions>
+        </event-block>
+        <event-block sid="836321474401618">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="384641709216330" type="Personagem">
+                    <param id="0" name="Object">Drugs</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="141417930806375" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="661622085776293" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="872129876200274" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation3&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="281620725694697" type="Drugs" />
+            </actions>
+        </event-block>
+        <event-block sid="808028590317553">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="847035956578334" type="Personagem">
+                    <param id="0" name="Object">Drugs</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="262112224169146" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="194120204567135" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="618613583989008" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation4&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="479096976844213" type="Drugs" />
+            </actions>
+        </event-block>
+        <event-block sid="712878812078478">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="794797511432919" type="Personagem">
+                    <param id="0" name="Object">1Life</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="278511124526783" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation3&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="818228195871452" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="204744652802053" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="653787262783255" type="1Life" />
+            </actions>
+        </event-block>
+        <event-block sid="233844258996176">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="427569391365779" type="Personagem">
+                    <param id="0" name="Object">1Life</param>
+                </condition>
+                <condition id="2" name="Is playing" sid="257397244553077" type="Lives">
+                    <param id="0" name="Animation">&quot;Animation2&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="419150507812377" type="System">
+                    <param id="0" name="Seconds">0.0</param>
+                </action>
+                <action id="4" name="Set animation" sid="913285135206456" type="Lives">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="269750834960157" type="1Life" />
+            </actions>
+        </event-block>
+        <event-block sid="710737810497151">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="214426274452938" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="617954271095794" type="Temporizador">
+                    <param id="0" name="Text">&quot;Tempo:&quot; &amp; time</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="966728064926571">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="477906049471701" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="301016686795240" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Set text" sid="545599878724584" type="Temporizador">
+                    <param id="0" name="Text">&quot;Tempo:&quot; &amp; timer</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="174279524173291">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="255498357546851" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="205430797604984" type="Personagem">
+                    <param id="0" name="X">96</param>
+                    <param id="1" name="Y">288</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="371387599145814">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="823392651363163" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="942247560988442" type="Temporizador">
+                    <param id="0" name="Text">&quot;Tempo:&quot;&amp; time</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
